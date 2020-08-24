@@ -1,20 +1,38 @@
 <template>
-  <div id="app">
-    <div class="font-bold text-blue-500">hola</div>
+  <div id="app" class="container mx-auto">
+    <BaseHeader></BaseHeader>
+    <img src="images/photo1.png" alt="cover" />
+    <section class="my-8">
+      <BaseIngredients></BaseIngredients>
+      <BaseInfo></BaseInfo>
+    </section>
+    <BaseInstructions></BaseInstructions>
   </div>
 </template>
 
 <script>
+import BaseHeader from "@/components/base/BaseHeader.vue";
+import BaseIngredients from "@/components/base/BaseIngredients.vue";
+import BaseInstructions from "@/components/base/BaseInstructions.vue";
+import BaseInfo from "@/components/base/BaseInfo.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    BaseHeader,
+    BaseIngredients,
+    BaseInstructions,
+    BaseInfo,
+  },
 };
 </script>
 
 <style>
 :root {
-  --global-font-family: "Poppins", "Helvetica Neue", -apple-system,
+  --global-font-family: "Montserrat", "Helvetica Neue", -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --global-secundary-font-family: "Playfair Display", "Helvetica Neue",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   --global-font-size: 1rem;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
@@ -35,5 +53,13 @@ body {
   scroll-behavior: smooth;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.montserrat {
+  font-family: var(--global-font-family);
+}
+
+.playfair-display {
+  font-family: var(--global-secundary-font-family);
 }
 </style>
