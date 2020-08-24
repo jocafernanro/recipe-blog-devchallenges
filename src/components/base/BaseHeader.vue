@@ -1,7 +1,7 @@
 <template>
   <div class="mb-8">
     <h1 class="playfair-display font-bold text-5xl mb-4">
-      Classic Cheescake Recipe
+      {{ name }}
     </h1>
     <div class="flex flex-row">
       <svg
@@ -20,16 +20,19 @@
         <circle cx="11.5" cy="6.5" r="1.5" fill="#C4C4C4" />
       </svg>
       <p class="w-2/3 -mt-1 italic">
-        Look no further for a creamy and ultra smooth classic cheesecake recipe!
-        Paired with a buttery graham cracker crust, no one can deny its simple
-        decadence. For the best results, bake in a water bath
+        {{ description }}
       </p>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    name: String,
+    description: String,
+  },
+};
 </script>
 
 <style></style>
