@@ -1,17 +1,18 @@
 <template>
-  <div id="app" class="container mx-auto">
+  <div id="app" class="container mx-auto px-3">
     <BaseHeader
       :name="recipe.name"
       :description="recipe.description"
     ></BaseHeader>
     <img src="images/photo1.png" alt="cover" />
-    <section class="my-8 flex flex-row content-between">
+    <section class="my-8 flex flex-col md:flex-row content-between">
       <BaseIngredients :recipeElements="recipe.elements"></BaseIngredients>
       <BaseInfo :recipeInfo="recipe.info"></BaseInfo>
     </section>
     <BaseInstructions
       :recipeInstructions="recipe.instructions"
     ></BaseInstructions>
+    <BaseFooter></BaseFooter>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import BaseHeader from "@/components/base/BaseHeader.vue";
 import BaseIngredients from "@/components/base/BaseIngredients.vue";
 import BaseInstructions from "@/components/base/BaseInstructions.vue";
 import BaseInfo from "@/components/base/BaseInfo.vue";
+import BaseFooter from "@/components/base/BaseFooter.vue";
 
 export default {
   name: "App",
@@ -28,6 +30,7 @@ export default {
     BaseIngredients,
     BaseInstructions,
     BaseInfo,
+    BaseFooter,
   },
   data: function() {
     return {

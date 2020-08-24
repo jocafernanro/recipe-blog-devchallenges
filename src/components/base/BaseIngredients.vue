@@ -1,5 +1,5 @@
 <template>
-  <div class="w-2/4">
+  <div class="md:w-3/5">
     <h2 class="playfair-display font-bold text-2xl mb-8">Ingredients</h2>
     <IngredientElement
       v-for="(element, index) in recipeElements"

@@ -1,11 +1,11 @@
 <template>
   <div class="mb-8">
-    <h1 class="playfair-display font-bold text-5xl mb-4">
+    <h1 class="playfair-display font-bold text-2xl md:text-5xl mb-4 mt-8">
       {{ name }}
     </h1>
     <div class="flex flex-row">
       <svg
-        width="13"
+        width="40"
         height="8"
         viewBox="0 0 13 8"
         fill="none"
@@ -19,7 +19,7 @@
         <circle cx="11.5" cy="1.5" r="1.5" fill="#C4C4C4" />
         <circle cx="11.5" cy="6.5" r="1.5" fill="#C4C4C4" />
       </svg>
-      <p class="w-2/3 -mt-1 italic">
+      <p class="text-sm md:w-2/3 -mt-1 italic">
         {{ description }}
       </p>
     </div>

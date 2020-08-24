@@ -8,9 +8,11 @@
       :key="index"
       class="mb-2"
     >
-      <label class="inline-flex items-center">
-        <input type="checkbox" class="form-checkbox" checked />
-        <span class="ml-2" v-html="ingredient">{{ ingredient }}</span>
+      <label class="flex fle-col">
+        <input type="checkbox" class="form-checkbox text-orange-500 h-5 w-5" />
+        <span class="ml-4 -mt-1 md:text-lg" v-html="ingredient">{{
+          ingredient
+        }}</span>
       </label>
     </div>
   </div>
