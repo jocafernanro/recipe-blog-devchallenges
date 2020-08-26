@@ -5,8 +5,7 @@ The challenge and the requirements here: [https://devchallenges.io/challenges/OE
 
 ## Project
 
-This is a simple project using vanilla js, tailwindcss and no much more. No webpack, no babel, postcss, etc.
-Check it on live here: https://recipe-blog-devchallenges.josematico.com/
+This is a simple vue project with tailwindcss and no much more. Check it on live here: https://recipe-blog-devchallenges.josematico.com/
 
 ## Project setup
 
